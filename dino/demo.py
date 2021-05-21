@@ -32,6 +32,7 @@ FONT = pygame.font.Font('freesansbold.ttf', 20)
 class Dinosaur:
 
 
+
     def __init__(self, img=RUNNING[0]):
 
 
@@ -43,6 +44,7 @@ class Dinosaur:
 
     def run(self):
 
+
     def draw(self, SCREEN):
 
 
@@ -53,16 +55,18 @@ class Obstacle:
 
     def update(self):
 
+
     def draw(self, SCREEN):
 
 
 
 class SmallCactus(Obstacle):
+    def __init__(self, image, number_of_cacti):
+
 
 
 class LargeCactus(Obstacle):
     def __init__(self, image, number_of_cacti):
-
 
 
 def remove(index):
@@ -74,15 +78,23 @@ def distance(pos_a, pos_b):
 
 
 def eval_genomes(genomes, config):
-   
+
+
+
+        genome.fitness = 0
 
     def score():
-       
-    def statistics():
+
         
 
+    def statistics():
+
+
     def background():
-       
+
+
+
+
 # Setup the NEAT Neural Network
 def run(config_path):
     global pop
