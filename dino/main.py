@@ -139,9 +139,12 @@ def eval_genomes(genomes, config):
         global points, game_speed
         points += 1
         if points % 100 == 0:
-            game_speed += 1
+            if game_speed<35:
+                game_speed += 1
         text = FONT.render(f'Points:  {str(points)}', True, (0, 0, 0))
         SCREEN.blit(text, (950, 50))
+        creation = FONT.render(f'Learn Python Through Game Development', True, (0, 0, 0))
+        SCREEN.blit(creation, (350, 10))
         
 
     def statistics():
